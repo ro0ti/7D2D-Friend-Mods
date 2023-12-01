@@ -1,0 +1,209 @@
+<configs>
+  <append xpath="/styles/global">
+	<!--COLORES PARA 7 DAYS-->
+  <style_entry name="RXBackground"      value="45,48,56"/>
+  <style_entry name="RXHeader"       value="56,59,67"/>
+  <style_entry name="RXRowsBack"       value="60,63,71"/>
+  <style_entry name="RXRowsSelect"       value="188,188,188"/>
+  <style_entry name="RXRowsHover"       value="255,192,0"/>
+  <style_entry name="RXRowsMula"       value="145,145,145"/>
+
+  <!-- EXPLICIT FOR DEVELOPER --><!-- LOS QUE TIENEN MODS DE REVISION PUEDEN CAMBIAR EL COLOR SIN PROBLEMAS -->
+
+  <!-- ALL COLOR PRIVATE --><!-- ESTO CAMBIARA CASI TODO EL COLOR DE LA INTERFAZ -->
+
+  <style_entry name="RXWindowBackground"      value="35,48,82"/>      <!--COLOR ALL BACKGROUND-->
+  <style_entry name="RXWindowHeader"          value="46,59,93"/>      <!--COLOR ALL HEADER-->
+  <style_entry name="RXWindowBackgroundLine"  value="101,208,208"/>   <!--COLOR ALL SEPARATOR-->
+  <style_entry name="RXIconsBack"             value="50,63,97"/>      <!--COLOR ALL STATS BACKGROUNDD-->
+  <style_entry name="RXCountBack"             value="91,104,138"/>    <!--COLOR ALL OTHER STATS BACKGROUND-->
+  <style_entry name="RXxpBackground"          value="35,48,82,210"/>  <!--COLOR ALL XP TOOLBELT BACKGROUND-->
+  <style_entry name="RXToxpColor"             value="255,186,0,220"/>
+  <style_entry name="RXToxpDeficitColor"      value="238,68,68,220"/>
+
+  <style_entry name="RXWindowBackgroundRGBA"      value="35,48,82,220"/>      <!--COLOR ALL BACKGROUND TRANSPARENT-->
+  <style_entry name="RXWindowHeaderRGBA"          value="46,59,93,220"/>      <!--COLOR ALL HEADER TRANSPARENT-->
+
+  <!-- END ALL COLOR PRIVATE -->
+
+  <style_entry name="RXfRowsHover"       value="255,192,0"/>
+  <style_entry name="RXfRowsMula"       value="145,145,145"/>
+
+	<style_entry name="yellow" 			value="255,225,0"/>
+	<style_entry name="red" 			value="238,68,68"/>
+	<style_entry name="DarkLight" 			value="4,87,105"/>
+	<style_entry name="Gold2" 			value="255,186,0"/>
+	<style_entry name="Darkred" 			value="89,0,0"/>
+	<style_entry name="DarkBlue" 			value="4,26,67"/>
+	<style_entry name="Pink" 			value="255,0,126"/>
+
+	<!--<style_entry name="RFondo"             value="33,44,45" />-->
+  <style_entry name="Rcontorno"             value="1,33,41" />
+  <style_entry name="Rintemfondo"             value="48,52,53" />
+  <style_entry name="Rrowcolor"             value="62,67,68" />
+  <style_entry name="Rinvi"             value="0,0,0,0" />
+
+  <style_entry name="RFondo"             value="20,30,42" />
+  <style_entry name="Fondoiteminfo"             value="89,96,106" />
+  <style_entry name="Fondomod"             value="23,70,97" />
+  <style_entry name="YEcontorne"             value="14,20,28" />
+  <style_entry name="YEItemC"             value="37,67,62" />
+  <style_entry name="LockCo"             value="111,23,19,255" />
+  <style_entry name="SearchCo"             value="51,170,5,255" />
+  <style_entry name="RhoverB"             value="0,186,255" />
+  <style_entry name="YEbaitem"             value="16,34,36" />
+
+  <!--<style_entry name="YEcontorne"             value="2,70,76" />
+  <style_entry name="YEItemC"             value="37,67,62" />
+  <style_entry name="LockCo"             value="111,23,19,255" />
+  <style_entry name="SearchCo"             value="51,170,5,255" />
+  <style_entry name="RhoverB"             value="0,186,255" />
+  <style_entry name="YEbaitem"             value="16,34,36" />-->
+
+  <!--<style_entry name="RFondo"             value="31,50,33" />
+  <style_entry name="Rcontorno"             value="205,205,205" />
+  <style_entry name="Rintemfondo"             value="23,37,24" />
+  <style_entry name="Rrowcolor"             value="10,28,12" />-->
+  </append>
+
+  <append xpath="/styles">
+
+    <style name="ramos.crafting.info.window" type="window">
+      <style_entry name="valid_color" value="[green]"/>
+      <style_entry name="invalid_color" value="[red]"/>
+      <style_entry name="valid_sprite" value="YE_hover_QuestEntryTracking"/>
+      <style_entry name="invalid_sprite" value="YE_hover_QuestEntryTracking"/>
+      <style_entry name="width" value="340"/>
+      <style_entry name="height" value="26"/>
+    </style>
+
+    <style name="ScrollBackpack" type="sprite">
+      <style_entry name="depth" value="0"/>
+      <style_entry name="width" value="18"/>
+      <style_entry name="height" value="674"/>
+      <style_entry name="atlas" value="UIScrollR"/>
+      <style_entry name="color" value="34,40,37,220"/>
+      <style_entry name="sprite" value="Rscroll1"/>
+    </style>
+
+    <style name="RXitemStack">
+        <style_entry name="select_color" value="[RXRowsSelect]"/>
+        <style_entry name="press_color" value="[limeGreen]"/>
+        <style_entry name="final_pressed_color" value="[lightGrey]"/>
+        <style_entry name="background_color" value="0,0,0,1"/>
+        <style_entry name="highlight_color" value="[RXRowsHover]"/>
+        <style_entry name="holding_color" value="[RXRowsSelect]"/>
+        <style_entry name="width" value="75"/>
+        <style_entry name="height" value="75"/>
+        <style_entry name="hover_icon_grow" value="1.5"/>
+        <style_entry name="on_press" value="true"/>
+        <style_entry name="sound_volume" value="0.75"/>
+        <style_entry name="pickup_sound" value="[pickup_click]"/>
+        <style_entry name="place_sound" value="[place_click]"/>
+      </style>
+
+      <style name="RXToolbeltitemStack">
+        <style_entry name="select_color" value="[RXRowsSelect]"/>
+        <style_entry name="press_color" value="[limeGreen]"/>
+        <style_entry name="final_pressed_color" value="[lightGrey]"/>
+        <style_entry name="background_color" value="0,0,0,1"/>
+        <style_entry name="highlight_color" value="[RXRowsHover]"/>
+        <style_entry name="holding_color" value="[RXRowsSelect]"/>
+        <style_entry name="width" value="75"/>
+        <style_entry name="height" value="75"/>
+        <style_entry name="hover_icon_grow" value="1.5"/>
+        <style_entry name="on_press" value="true"/>
+        <style_entry name="sound_volume" value="0.75"/>
+        <style_entry name="pickup_sound" value="[pickup_click]"/>
+        <style_entry name="place_sound" value="[place_click]"/>
+      </style>
+
+      <style name="RXitemStackBack">
+        <style_entry name="select_color" value="[RXRowsSelect]"/>
+        <style_entry name="press_color" value="[limeGreen]"/>
+        <style_entry name="final_pressed_color" value="[lightGrey]"/>
+        <style_entry name="background_color" value="0,0,0,0"/>
+        <style_entry name="highlight_color" value="[RXRowsHover]"/>
+        <style_entry name="holding_color" value="[RXRowsHover]"/>
+        <style_entry name="lockedSprite_color"  value="255,0,0,150"/>
+        <style_entry name="width" value="76"/>
+        <style_entry name="height" value="76"/>
+        <style_entry name="hover_icon_grow" value="1.5"/>
+        <style_entry name="on_press" value="true"/>
+        <style_entry name="sound_volume" value="0.75"/>
+        <style_entry name="pickup_sound" value="[pickup_click]"/>
+        <style_entry name="place_sound" value="[place_click]"/>
+      </style>
+
+      <style name="RXUIitemStackBack">
+        <style_entry name="select_color" value="[RXRowsSelect]"/>
+        <style_entry name="press_color" value="[limeGreen]"/>
+        <style_entry name="final_pressed_color" value="[lightGrey]"/>
+        <style_entry name="background_color" value="0,0,0,0"/>
+        <style_entry name="highlight_color" value="[RXRowsHover]"/>
+        <style_entry name="holding_color" value="[RXRowsHover]"/>
+        <style_entry name="lockedSprite_color"  value="255,0,0,150"/>
+        <style_entry name="width" value="68"/>
+        <style_entry name="height" value="68"/>
+        <style_entry name="hover_icon_grow" value="1.5"/>
+        <style_entry name="on_press" value="true"/>
+        <style_entry name="sound_volume" value="0.75"/>
+        <style_entry name="pickup_sound" value="[pickup_click]"/>
+        <style_entry name="place_sound" value="[place_click]"/>
+      </style>
+
+  	<style name="itemStackYE">
+        <style_entry name="select_color" value="[beige]"/>
+        <style_entry name="press_color" value="[limeGreen]"/>
+        <style_entry name="final_pressed_color" value="[lightGrey]"/>
+        <style_entry name="background_color" value="[Rinvi]"/>
+        <style_entry name="highlight_color" value="[white]"/>
+        <style_entry name="holding_color" value="[white]"/>
+        <style_entry name="lockedSprite_color" value="[LockCo]"/>
+        <style_entry name="width" value="67"/>
+        <style_entry name="height" value="67"/>
+        <style_entry name="hover_icon_grow" value="1.1"/>
+        <style_entry name="on_press" value="true"/>
+        <style_entry name="sound_volume" value="0.75"/>
+        <style_entry name="pickup_sound" value="[pickup_click]"/>
+        <style_entry name="place_sound" value="[place_click]"/>
+		</style>
+
+    <style name="itemStackMod">
+        <style_entry name="select_color" value="[beige]"/>
+        <style_entry name="press_color" value="[limeGreen]"/>
+        <style_entry name="final_pressed_color" value="[lightGrey]"/>
+        <style_entry name="background_color" value="[RXIconsBack]"/>
+        <style_entry name="highlight_color" value="[RXIconsBack]"/>
+        <style_entry name="holding_color" value="[white]"/>
+        <style_entry name="width" value="37"/>
+        <style_entry name="height" value="37"/>
+        <style_entry name="hover_icon_grow" value="1.5"/>
+        <style_entry name="on_press" value="true"/>
+        <style_entry name="sound_volume" value="0.75"/>
+        <style_entry name="pickup_sound" value="[pickup_click]"/>
+        <style_entry name="place_sound" value="[place_click]"/>
+    </style>
+
+    <style name="YEstackBack" type="sprite">
+      <style_entry name="atlas" value="UIAtlas"/>
+      <style_entry name="depth" value="1"/>
+      <style_entry name="sprite" value="RX_BackgroundItem"/>
+      <style_entry name="color" value="[RXRowsBack]"/>
+      <style_entry name="type" value="sliced"/>
+      <style_entry name="width" value="76"/>
+      <style_entry name="height" value="76"/>
+    </style>
+
+    <style name="YEXUIstackBack" type="sprite">
+      <style_entry name="atlas" value="UIAtlas"/>
+      <style_entry name="depth" value="1"/>
+      <style_entry name="sprite" value="RX_BackgroundItem"/>
+      <style_entry name="color" value="[RXRowsBack]"/>
+      <style_entry name="type" value="sliced"/>
+      <style_entry name="width" value="67"/>
+      <style_entry name="height" value="67"/>
+    </style>
+
+  </append>
+</configs>

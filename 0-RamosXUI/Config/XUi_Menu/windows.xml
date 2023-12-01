@@ -1,0 +1,198 @@
+<ramos>
+	<remove xpath="/windows/window[@name='mainMenu']"/>
+	<remove xpath="/windows/window[@name='newsWindow']"/>
+	<remove xpath="/windows/window[@name='mainMenuLogo']"/>
+
+	<!-- <set xpath="/windows/window[@name='menuBackground']/texture[@name='bgTexture']/@texture">@modfolder:UIAtlases/ItemIconAtlas/RB_Background1.png</set> -->
+
+<append xpath="/windows">
+
+	<window deptp="22" name="RXcreditos" anchor="RightCenter" pos="-525,495" width="500" height="390" >
+		<sprite depth="-1" name="background" atlas="UIXui" sprite="RX_Background_Credits" type="sliced" color="[RXWindowBackground]" globalopacity="true" />
+		<label depth="3" width="480" height="26" pos="8,-10" crispness="Never" text_key="YECre0" tooltip_key="YECre0T" font_size="22"/>
+		<grid depth="2" pos="8,-40" rows="4" cols="1" cell_width="480" cell_height="26" repeat_content="false" arrangement="vertical">
+			<rect><label crispness="Never" font_size="22" color="[white]"  text_key="YECre1"/></rect>
+			<rect><label crispness="Never" font_size="22" color="0,0,0,0"  text_key="YECreOr"/></rect>
+			<rect><label crispness="Never" font_size="22" color="[white]"  text_key="YECre2"/></rect>
+			<rect><label crispness="Never" font_size="22" color="[white]"  text_key="YECre3"/></rect>
+			<!-- <rect><label crispness="Never" font_size="22" color="[white]"  text_key="YECre4"/></rect> -->
+			<!-- <rect><label crispness="Never" font_size="23" color="[white]"  text_key="YECre5"/></rect>
+			<rect><label crispness="Never" font_size="23" color="[white]"  text_key="YECre6"/></rect> -->
+		</grid>
+	</window>
+
+	<window name="RXCredits" anchor="CenterCenter" pos="-450,400" width="800" height="800" controller="RamosXUI_Harmony.RX_Credits, RamosXUI_Harmony" cursor_area="true">
+
+		<panel disableautobackground="true" clipping="softclip" clippingsoftness="0,40" >
+			<rect name="categoryTemplates">
+				<rect name="headerRowTemplate">
+					<label name="caption" depth="1" height="42" font_size="40" color="[RXHoverColor]" justify="center" text="test" />
+				</rect>
+			</rect>
+			<rect name="creditTemplates">
+				<rect name="normalRowTemplate">
+					<label name="name" depth="1" pos="-30,0" width="300" height="32" font_size="30" justify="center" text="test1" />
+					<label name="centertext" depth="1" height="32" font_size="30" justify="center" text="test2" />
+					<label name="contribution" depth="1" pos="500,0" width="300" height="32" font_size="30" justify="center" text="test3" />
+					<sprite name="line" depth="1" pos="0,-27" height="1" color="255,255,255,50" />
+				</rect>
+			</rect>
+		
+			<grid name="creditsGrid" rows="0" cell_width="590" cell_height="32" repeat_content="false" arrangement="vertical" >
+			</grid>
+		</panel>
+	</window>
+
+	<window name="RXModsMainMenu" depth="30" pos="-900,500" anchor="CenterCenter" width="1800" height="1000" controller="RamosXUI_Harmony.RX_Mods, RamosXUI_Harmony" cursor_area="true">
+		<sprite depth="0" name="background" atlas="UIMainMenu" sprite="RB_Background_mainMenu" pos="0,349" color="[RXWindowBackground]" width="325" height="1698" type="sliced" globalopacity="true" fillcenter="false"/>
+		<rect  name="PatchNotes" pos="375,-5" width="890" height="990">
+			<sprite depth="-1" name="background" atlas="UIMods" sprite="ModsXui_Background" type="sliced" color="[RXWindowBackground]" globalopacity="true" fillcenter="false"/>
+			<!-- <sprite depth="-1" name="background" atlas="UIYourEnd" sprite="YE_Background_PatchNotes" pos="-10,30" width="750" height="965" type="sliced" globalopacity="true" fillcenter="false"/> -->
+			<!-- <label depth="3" width="740" height="30" pos="10,-10" text_key="YENota0" font_size="22" crispness="Never"/> -->
+			<label depth="3" width="740" height="60" pos="40,-5" text_key="ModsForUnchanged" font_size="22" crispness="Never"/>
+			<grid name="buttons" pos="35,-60" cols="2" rows="3" width="405" cell_width="405" cell_height="305" arrangement="vertical" repeat_content="false" >
+				<rect pos="0,0" width="400" height="300">
+					<sprite style="YESpriteHelp" atlas="UIMods" sprite="3SlotsForge" />
+					<label depth="3" width="390" height="90" pos="5,-160" text_key="NotaForge" font_size="22" crispness="Never"/>
+					<sprite depth="1" name="background" atlas="UIMods" sprite="ModsXui_BackgroundRows" type="sliced" color="[RXWindowHeader]" globalopacity="true"/>
+					<simplebutton name="linkforge" pos="145,-250" depth="3" width="250" height="46" caption_key="LDownload" tooltip_key="" font_size="40" />
+				</rect>
+				<rect pos="0,0" width="400" height="300">
+					<sprite style="YESpriteHelp" atlas="UIMods" sprite="6SlotsQueue" />
+					<label depth="3" width="390" height="90" pos="5,-160" text_key="NotaQueue" font_size="22" crispness="Never"/>
+					<sprite depth="1" name="background" atlas="UIMods" sprite="ModsXui_BackgroundRows" type="sliced" color="[RXWindowHeader]" globalopacity="true"/>
+					<simplebutton name="linkqueue" pos="145,-250" depth="3" width="250" height="46" caption_key="LDownload" tooltip_key="" font_size="40" />
+				</rect>
+				<rect pos="0,0" width="400" height="300">
+					<label depth="3" height="30" pos="200,-75" text_key="NotaCompa" color="0,255,156" justify="center" pivot="center" font_size="21" style="OutlineMenu" />
+					<sprite style="YESpriteHelp" atlas="UIMods" sprite="15SlotsToolbelt" />
+					<label depth="3" width="390" height="60" pos="5,-160" text_key="NotaToolbelt" font_size="22" crispness="Never"/>
+					<sprite depth="1" name="background" atlas="UIMods" sprite="ModsXui_BackgroundRows" type="sliced" color="[RXWindowHeader]" globalopacity="true"/>
+					<simplebutton name="linktoolbelt" pos="145,-200" depth="3" width="250" height="46" caption_key="LDownload" tooltip_key="" font_size="40" />
+					<simplebutton name="linktoolbetkha" pos="145,-250" depth="3" width="250" height="46" caption_key="LSearch" tooltip_key="LDownloadKha" font_size="40" />
+				</rect>
+				<rect pos="0,0" width="400" height="300">
+					<sprite style="YESpriteHelp" atlas="UIMods" sprite="60SlotsBackpack" />
+					<label depth="3" width="390" height="90" pos="5,-160" text_key="NotaBackpack" font_size="22" crispness="Never"/>
+					<sprite depth="1" name="background" atlas="UIMods" sprite="ModsXui_BackgroundRows" type="sliced" color="[RXWindowHeader]" globalopacity="true"/>
+					<simplebutton name="linkbackpack" pos="145,-250" depth="3" width="250" height="46" caption_key="LDownload" tooltip_key="" font_size="40" />
+				</rect>
+				<rect pos="0,0" width="400" height="300">
+					<label depth="3" height="30" pos="200,-75" text_key="NotaCompa" color="0,255,156" justify="center" pivot="center" font_size="21" style="OutlineMenu" />
+					<sprite style="YESpriteHelp" atlas="UIMods" sprite="EntityHealthBarVisible" />
+					<label depth="3" width="390" height="90" pos="5,-160" text_key="NotaEntity" font_size="22" crispness="Never"/>
+					<sprite depth="1" name="background" atlas="UIMods" sprite="ModsXui_BackgroundRows" type="sliced" color="[RXWindowHeader]" globalopacity="true"/>
+					<simplebutton name="linkentity" pos="145,-250" depth="3" width="250" height="46" caption_key="LDownload" tooltip_key="" font_size="40" />
+				</rect>
+				<rect pos="0,0" width="400" height="300">
+					<sprite style="YESpriteHelp" atlas="UIMods" sprite="ForMenuUI" />
+					<label depth="3" width="390" height="90" pos="5,-160" text_key="NotaMenu" font_size="22" crispness="Never"/>
+					<sprite depth="1" name="background" atlas="UIMods" sprite="ModsXui_BackgroundRows" type="sliced" color="[RXWindowHeader]" globalopacity="true"/>
+					<simplebutton name="linkmenu" pos="145,-250" depth="3" width="250" height="46" caption_key="LDownload" tooltip_key="" font_size="40" />
+				</rect>
+			</grid>
+		</rect>
+		<rect depth="10" pos="1295,-438" width="500" height="550">
+			<sprite depth="-1" name="background" atlas="UIXui" sprite="RX_Background_newsWindow" type="sliced" color="[RXWindowBackground]" globalopacity="true" />
+			<label name="warning" pos="10,-10" depth="6" width="430" height="400" font_size="24" color="[white]" justify="left" parse_actions="true" text="{modWarning}"  crispness="Never"/>
+			<!-- <rect depth="10" pos="0,0" width="300" height="300" controller="RamosXUI_Harmony.RX_Rotation, RamosXUI_Harmony">
+				<sprite depth="2" name="spriteLeft" pos="10,-80" sprite="YEradial" pivot="center" type="sliced" width="105" height="105" globalopacity="true" />
+				<sprite depth="2" name="spriteRight" pos="10,-200" sprite="YEradial1" pivot="center" type="sliced" width="105" height="105" globalopacity="true" />
+			</rect> -->
+		</rect>
+		<rect depth="10" pos="1295,-5" width="500" height="425">
+			<sprite depth="-1" name="background" atlas="UIXui" sprite="RX_Background_Credits" type="sliced" color="[RXWindowBackground]" globalopacity="true" width="500" height="425"/>
+			<label depth="3" width="480" height="26" pos="8,-10" crispness="Never" text_key="YEModExtra" font_size="22"/>
+			<rect depth="3" pos="10,-45" width="480" height="300">
+				<sprite width="480" height="250" atlas="UIMods" sprite="PoiPreview" />
+				<label depth="3" width="480" height="80" pos="5,-255" text_key="YEModPoiPreview" font_size="22" crispness="Never"/>
+				<simplebutton name="btnLinkPoi" pos="230,-330" depth="3" width="250" height="46" caption_key="LDownload" tooltip_key="" font_size="40" />
+			</rect>
+		</rect>
+		<rect depth="10" pos="0,-850">
+			<grid pos="160,0" depth="2" rows="2" cell_width="275" cell_height="70" repeat_content="false" arrangement="vertical" >
+				<RX_mainmenubutton name="btnLinkMods"  width="275" height="50" caption_key="LMods" upper_case="true"/>
+				<RX_mainmenubutton name="btnBack"  width="275" height="50" caption_key="xuiBack" upper_case="true"/>
+			</grid>
+		</rect>
+	</window>
+
+	<window name="RXsupportMainMenu" depth="21" pos="-525,495" anchor="RightCenter" width="500" height="390" controller="RamosXUI_Harmony.RX_Support, RamosXUI_Harmony" cursor_area="true">
+		<grid name="tolinks" depth="20" pos="8,-330" rows="2" cols="2" cell_width="250" cell_height="60" repeat_content="false">
+			<RX_support name="btnlinktwo" 		sprite="YEButton_Discord" 	caption_key="LDiscord" 		hoversprite="YEButton_Discord_H"  tooltip_key="DiscordSupport" />
+			<RX_support name="btnlinkthree" 	sprite="YEButton_Paypal" 	caption_key="LPaypal" 		hoversprite="YEButton_Paypal_H"   tooltip_key="PaypalDonation" />
+			<!-- <RX_support name="btnlinkfour" 		sprite="YEButton_Mods" 		caption_key="LMods" 		hoversprite="YEButton_Mods_H"  	  tooltip_key="ModsForUnchanged" /> -->
+		</grid>
+	</window>
+
+	<window name="mainMenuLogo" anchor="LeftCenter" pos="150,250" width="325" height="250" depth="10">
+		<texture depth="3" pos="162,0" color="[white]" texture="Textures/UI/7DTD_logo" name="gameLogo" width="420" height="210" pivot="center" />
+		<label depth="3" width="325" height="22" pos="162,-50" pivot="center" justify="center" text_key="TextInterface" font_size="20" />
+	</window>
+
+	<window name="mainMenu" anchor="LeftCenter" pos="150,850" width="325" height="1698" controller="RamosXUI_Harmony.RX_MainMenu, RamosXUI_Harmony" cursor_area="true">
+		<sprite depth="0" name="background" atlas="UIMainMenu" sprite="RB_Background_mainMenu" pos="0,0" color="[RXWindowBackground]" width="325" type="sliced" globalopacity="true" fillcenter="false"/>
+		<label depth="3" width="325" height="50" pos="162,-720" pivot="center" justify="center" text_key="VersionMain" font_size="22" />
+		<grid pos="162,-790" rows="13" cell_width="275" cell_height="70" repeat_content="false" arrangement="vertical" >
+			<RX_mainmenubutton name="btnNewGame" 			pivot="center" width="275" height="50" caption_key="xuiNewGame" />
+			<RX_mainmenubutton name="btnContinueGame" 		pivot="center" width="275" height="50" caption_key="xuiContinueGame" />
+			<RX_mainmenubutton name="btnConnectToServer" 	pivot="center" width="275" height="50" caption_key="xuiConnectToServer" />
+			<RX_mainmenubutton name="btnEditingTools" 		pivot="center" width="275" height="50" caption_key="xuiEditingTools" />
+			<RX_mainmenubutton name="btnOptions" 			pivot="center" width="275" height="50" caption_key="xuiOptions" />
+			<RX_mainmenubutton name="btnDownloadMods"  		pivot="center" width="275" height="50" caption_key="xuiMods" />
+			<RX_mainmenubutton name="btnCredits" 			pivot="center" width="275" height="50" caption_key="xuiCredits" />
+			<rect />
+			<RX_mainmenubutton name="btnQuit" pivot="center" width="275" height="50" caption_key="xuiQuit" />
+		</grid>
+	</window>
+
+	<window name="newsWindow" anchor="RightCenter" pos="-525,80" width="500" height="550" controller="NewsWindow" cursor_area="true" browse_sound="Sounds/Crafting/craft_click_recipe" on_scroll="true">
+		<sprite depth="-1" name="background" atlas="UIXui" sprite="RX_Background_newsWindow" type="sliced" color="[RXWindowBackground]" globalopacity="true" />
+		<panel name="header" pos="0,0" height="80" depth="1" backgroundcolor="0,0,0,0" bordercolor="0,0,0,0" borderthickness="3" pivot="topleft" visible="{has_news_provider}">
+			<rect visible="{has_news}">
+				<label name="lblLeft" depth="1" pos="-8,-40" width="55" height="35" font_size="30" color="[white]" pivot="right" justify="right" parse_actions="true" max_line_count="1" text=" [action:gui:GUI Window Paging Up]" />
+				<button name="btnYounger" depth="6" pos="20,-40" width="30" height="44" style="press, hover" sprite="ui_game_symbol_arrow_menu" pivot="center" sound="[paging_click]" enabled="{has_younger}" disabledcolor="[mediumGrey]" />
+
+				<button name="btnOlder" depth="6" pos="480,-40" width="30" height="44" style="press, hover" sprite="ui_game_symbol_arrow_menu" pivot="center" flip="horizontally" sound="[paging_click]" enabled="{has_older}" disabledcolor="[mediumGrey]" />
+				<label name="lblRight" depth="1" pos="508,-40" width="55" height="35" font_size="30" color="[white]" pivot="left" justify="left" parse_actions="true" max_line_count="1" text="[action:gui:GUI Window Paging Down] " />
+				
+				<label depth="3" name="headline" pos="40,-6" width="420" height="42" font_size="36" text="{headline}" />
+				<label depth="3" name="date" pos="40,-48" width="490" height="30" font_size="26" text="{date} - {age}" />
+				<label depth="3" name="source" pos="40,-78" width="490" height="30" font_size="26" text="{# localization('From Mod')}{# length(source) > 0 ? ': ' + source : ''}" color="[tan]" visible="{is_custom}" />
+			</rect>
+		</panel>
+
+		<panel name="content" pos="0,-78" height="470" depth="1" backgroundcolor="0,0,0,0" bordercolor="0,0,0,0" borderthickness="3" pivot="topleft" visible="{has_news_provider}">
+			<rect visible="{has_news}">
+				<label depth="3" name="contentText" pos="8,-8" width="484" height="426" spacing_y="4" text="{text}" />
+				
+				<rect name="btnLink" depth="3" pos="8,-450" width="484" height="26" enabled_font_color="[labelColor]" hovered_font_color="[hoverColor]" disabled_font_color="[disabledLabelColor]" controller="SimpleButton" button_enabled="true" font_size_default="24" font_size_hover="24" visible="{has_link}">
+					<button name="clickable" sprite="ui_game_popup" defaultcolor="0,0,0,10" hovercolor="0,0,0,10" type="sliced" hoverscale="1.0" pivot="left" sound="[default_click]" tooltip="{link}" />
+					<label depth="2" name="btnLabel" justify="right" text_key="xuiNewsReadMore" effect="outline" pivot="left" font_size="24" upper_case="true" />
+				</rect>
+			</rect>
+			
+			<rect visible="{# !has_news}">
+				<label depth="3" text_key="xuiLoadingNews" pos="250,-235" font_size="36" justify="center" pivot="center" />
+			</rect>
+		</panel>
+	</window>
+
+    <!-- <window name="mainMenu" anchor="LeftCenter" pos="110,850" width="325" height="1698" controller="MainMenu" cursor_area="true">
+    	<sprite depth="0" name="background" atlas="UIMainMenu" sprite="RB_Background_mainMenu" pos="0,0" width="325" type="sliced" globalopacity="true" fillcenter="false"/>
+		<label depth="3" size="325,50" pos="40,-720" text_key="VersionMain" font_size="22" />
+		<grid pos="160,-790" depth="2" rows="13" cell_width="275" cell_height="70" repeat_content="false" arrangement="vertical" >
+			<Rmainmenubutton name="btnNewGame" pivot="center" width="275" height="50" caption_key="xuiNewGame" />
+			<Rmainmenubutton name="btnContinueGame" pivot="center" width="275" height="50" caption_key="xuiContinueGame" />
+			<Rmainmenubutton name="btnConnectToServer" pivot="center" width="275" height="50" caption_key="xuiConnectToServer" />
+			<Rmainmenubutton name="btnEditingTools" pivot="center" width="275" height="50" caption_key="xuiEditingTools" />
+			<Rmainmenubutton name="btnOptions" pivot="center" width="275" height="50" caption_key="xuiOptions" />
+			<Rmainmenubutton name="btnCredits" pivot="center" width="275" height="50" caption_key="xuiCredits" />
+			<rect />
+			<Rmainmenubutton name="btnQuit" pivot="center" width="275" height="50" caption_key="xuiQuit" />
+		</grid>
+	</window> -->
+		
+</append>
+
+</ramos>

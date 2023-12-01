@@ -1,0 +1,28 @@
+<Config>
+	
+	<!--<set xpath="//window_group[@name='mainMenu']">		
+		<window name="mainMenu"/>
+		<window name="mainMenu2"/>
+	</set>-->
+	<set xpath="/xui/ruleset[@name='default']/@scale">1.160</set>
+
+	<set xpath="//window_group[@name='mainMenu']">		
+		<window name="mainMenu"/>
+		<window name="newsWindow" />
+		<window name="RXcreditos" />
+		<window name="RXCredits"/>
+		<window name="RXsupportMainMenu"/>
+	</set>
+
+	<insertAfter xpath="/xui/ruleset/window_group[@name='credits']">
+		<window_group name="RXModsMainMenu">
+			<window name="RXModsMainMenu"/>
+		</window_group>
+	</insertAfter>
+
+	<!-- <set xpath="//window_group[@name='loadingScreen']">		
+		<window name="loadingScreen" />
+		<window name="loadingScreenTip" />
+	</set> -->
+	
+</Config>

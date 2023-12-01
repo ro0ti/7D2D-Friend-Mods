@@ -1,0 +1,70 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+
+iron,items,Item,,,Scrap Iron,,Eisen,Hierro,Fer,Ferro,鉄,철제,Żelazo,Ferro,Железо,Demir,铁,鐵
+wood,items,Item,,,Wood,,Holz,Madera,Bois,Legno,木材,목재,Drewno,Madeira,Дерево,Tahta,木头,木頭
+clay,items,Item,,,Clay Soil,,Lehmboden,Terreno de arcilla,Sol en argile,Argilla,粘土層,식토,Gleba gliniasta,Solo argiloso,Глинистый грунт,Killi Toprak,粘土,黏土
+stone,items,Item,,,Small Stone,,Kleiner Stein,Piedra pequeña,Petite pierre,Sasso,小石,작은 돌,Mały kamyk,Pedra pequena,Маленький камень,Küçük Taş,小石子,小石頭
+lead,items,Item,,,Scrap Lead,,Blei,Plomo,Plomb,Piombo,鉛,납,Ołów,Chumbo,Свинец,Kurşun,铅,鉛
+brass,items,Item,,,Scrap Brass,,Messing,Latón,Laiton,Ottone,真ちゅう,놋쇠,Mosiądz,Latão,Латунь,Pirinç,黄铜,黃銅
+paper,items,Item,,,Paper,,Papier,Papel,Papier,Carta,紙,종이,Papier,Papel,Бумага,Kâğıt,纸,紙
+leather,items,Item,,,Leather,,Leder,Cuero,Cuir,Pelle,革,가죽,Skóra,Couro,Кожа,Deri,皮革,皮革
+cloth,items,Item,,,Cloth Fragment,,Stofffetzen,Trozo de tela,Morceau de tissu,Pezzo di stoffa,端切れ,천 조각,Kawałek tkaniny,Fragmento de tecido,Кусок ткани,Kumaş Parçası,碎布,碎布
+plants,items,Item,,,Plant Fibers,,Pflanzenfasern,Fibra vegetal,Fibres végétales,Fibre vegetali,植物繊維,식물 섬유,Włókna roślinne,Fibras vegetais,Волокна травы,Bitki Lifleri,植物纤维,植物纖維
+glass,items,Item,,,Broken Glass,,Zerbrochenes Glas,Cristal roto,Débris de verre,Vetro rotto,壊れたガラス,깨진 유리,Stłuczone szkło,Vidro quebrado,Осколки стекла,Kırık Cam,碎玻璃,碎玻璃
+meleeToolChainsawParts,items,Tool,,,Motor Tool Parts,,Motorwerkzeugteile,Partes de herramienta de motor,Pièces d'outils motorisés,Parti per attrezzi a motore.,動力ツールパーツ,모터 도구 부품,Części narzędzia silnikowego,Peças da ferramenta de motor,Части бензоинструмента,Motorlu Alet Parçaları,电动工具零件,電機工具零件
+YECosts,UI,XUI,,,Price,,Preis,"Precio","Prix",Prezzo,価格,가격,Cena,Preço,Цена,Fiyat,价格,價格
+YELEVEL,UI,XUi,,,"Level",,"Level","Nivel","Niveau","Livello","レベル","레벨","Poziom","Nível","Уровень","Seviye","等级","等級",
+
+xuiEmptyInfoPanelTextYourEnd0,UI,XUI,,,"Game instructions",,"Spielandleitung","Instrucciones del juego",,,,,,,,,,,
+xuiEmptyInfoPanelTextYourEnd1,UI,XUI,,,"[DECEA3][LEFT CLICK][-] to inspect an item, recipe or active effect",,"[LINKS-KLICK], um einen Gegenstand, ein Rezept oder einen aktiven Effekt genauer anzusehen","Haz [DECEA3][CLIC IZQUIERDO][-] para inspeccionar un objeto, receta o un efecto activo",,,,,,,,,,,,
+xuiEmptyInfoPanelTextYourEnd2,UI,XUI,,,"[DECEA3][LEFT CLICK][-] hold and drag to take a stack",,"[LINKS-KLICK] halten und ziehen, um einen Stapel zu nehmen","Haz [DECEA3][CLIC IZQUIERDO][-] mantén y arrastra para coger un lote",,,,,,,,,,,,
+xuiEmptyInfoPanelTextYourEnd3,UI,XUI,,,"[DECEA3][LEFT CLICK][-] to drop or swap a stack",,"[LINKS-KLICK], um einen Stapel abzulegen oder auszutauschen","Haz [DECEA3][CLIC IZQUIERDO][-] para soltar o intercambiar un lote",,,,,,,,,,,,
+xuiEmptyInfoPanelTextYourEnd4,UI,XUI,,,"[DECEA3][RIGHT CLICK][-] hold and drag to take a half stack",,"[RECHTS-KLICK] halten und ziehen, um einen halben Stapel zu nehmen","Haz [DECEA3][CLIC DERECHO][-] mantén y arrastra para coger medio lote",,,,,,,,,,,,
+xuiEmptyInfoPanelTextYourEnd5,UI,XUI,,,"[DECEA3][RIGHT CLICK][-] to drop one item at a time",,"[RECHTS-KLICK], um Gegenstände einzeln abzulegen","Haz [DECEA3][CLIC DERECHO][-] para soltar un objeto una vez",,,,,,,,,,,,
+xuiEmptyInfoPanelTextYourEnd6,UI,XUI,,,"[DECEA3][SHIFT CLICK][-] to move a stack between areas / containers",,"[SHIFT-KLICK], um einen Stapel zwischen Gebieten/Behältern zu verschieben","[DECEA3]Presiona SHIFT y haz clic[-] para mover un lote entre zonas/contenedores",,,,,,,,,,,,
+xuiEmptyInfoPanelTextYourEnd7,UI,XUI,,,"[DECEA3][R][-] to take everything from a container",,"[R], um alles aus einem Behälter zu nehmen","[DECEA3][R][-] para coger todo lo que hay en un contenedor",,,,,,,,,,,,
+
+YEAmmoName,UI,XUI,,,Ammo,,Munition,Munición,Munitions,Munizioni,弾薬：,탄약,Amunicja,Munição,Боеприпасы,Mühimmat,弹药,彈藥
+YEMatIsName,UI,XUI,,,"Material",,"Stoff","Material",,,,,,,,,,,,
+YERepairIsName,UI,XUI,,,"Repair with",,"Repariert mit","Se repara con",,,,,,,,,,,,
+YEToolRequiredName,UI,XUI,,,"Tool",,"Werkzeuge","Herramienta",,,,,,,,,,,,
+YECountName,UI,XUI,,,"Output count",,"Ausgabe","Salida de fabricación",,,,,,,,,,,,
+YEAreaName,UI,XUI,,,"Crafted in",,"Handwerk Bereich","Se fabrica en",,,,,,,,,,,,
+YEyouNeed,UI,XUI,,,"You Need",,"Bedarf","Necesitas",,,,,,,,,,,,
+YEyouHave,UI,XUI,,,"You Have",,"Besitz","Tienes",,,,,,,,,,,,
+YEQueueName,UI,XUI,,,"Queue",,"Warteschlange","Cola de fabricación",
+
+LDiscord,UI,XUi MainMenu,,,"Discord",,"Discord","Discordia",,,,,,,,,,,,
+LPaypal,UI,XUi MainMenu,,,"Paypal Donation",,"Paypal Donation","Donación Paypal",,,,,,,,,,,,
+LMods,UI,XUi MainMenu,,,"Mods for Unchanged",,"Mods for Unchanged","Mods para Unchanged",,,,,,,,,,,,
+DiscordSupport,UI,XUi MainMenu,,,"[00DEFF]Discord:[-] You can directly access UI support, submit your questions, suggestions and more",,"[00DEFF]Discord:[-] Sie können direkt auf den UI-Support zugreifen, Ihre Fragen, Vorschläge und mehr einreichen","[00DEFF]Discord:[-] puedes acceder directamente a UI support(soporte),presenta tus dudas, sugerencias y mas",,,,,,,,,,,,
+PaypalDonation,UI,XUi MainMenu,,,"[00DEFF]Donación Paypal:[-] you can send your support directly if you want (thanks for using mod XUI from (DJ TRIPLE XMR)",,"[00DEFF]Donación Paypal:[-] Sie können Ihre Unterstützung direkt senden, wenn Sie möchten (danke für die Verwendung von Mod XUI von (DJ TRIPLE XMR))","[00DEFF]Donación Paypal:[-] puedes enviar tu apoyo directamente si es que lo deseas (gracias por usar mod XUI de (DJ TRIPLE XMR)",,,,,,,,,,,,
+ModsForUnchanged,UI,XUi MainMenu,,,"[00DEFF]Mods for RAMOS XUI Unchanged:[-] You can find more mods created by the author specifically for the [00DEFF]Unchanged[-] version, but some will also be compatible with the Defined version (RAMOS XUI)",,"[00DEFF]Mods for RAMOS XUI Unchanged:[-] Sie können weitere Mods finden, die vom Autor speziell für die [00DEFF]Unchanged[-]-Version erstellt wurden, aber einige werden auch mit der Defined-Version (RAMOS XUI) kompatibel sein.","[00DEFF]Mods para RAMOS XUI Unchanged:[-] puedes encontrar mas mods creados por el autor especificamente para la version [00DEFF]Unchanged[-], pero tambien algunas seran compatibles con la version Definida (RAMOS XUI).",,,,,,,,,,,,
+
+NotaForge,UI,XUi MainMenu,,,"Increases forge slots to 3",,"Erhöht die Anzahl der Forge-Slots auf 3","Aumenta las ranuras de la fragua a 3",,,,,,,,,,,,
+NotaQueue,UI,XUi MainMenu,,,"Increases Crafting Queue slots to 6",,"Erhöht die Anzahl der Plätze in der Herstellungswarteschlange auf 6","Aumenta las ranuras de la cola de fabricación (Queue) a 6",,,,,,,,,,,,
+NotaToolbelt,UI,XUi MainMenu,,,"The mod increases 15 slots to the toolbar, this depends on the khaine mod, therefore you have to download both",,"Der Mod erhöht die Symbolleiste um 15 Plätze, dies hängt vom Khaine-Mod ab, daher müssen Sie beide herunterladen","El mod aumenta 15 ranuras a la barra de herramientas, esto depende de el mod de khaine, por lo tanto tienes que descargar las 2",,,,,,,,,,,,
+NotaBackpack,UI,XUi MainMenu,,,"Increase backpack up to 60 slots",,"Erweitern Sie den Rucksack auf bis zu 60 Plätze","Aumenta la mochila hasta 60 ranuras",,,,,,,,,,,,
+NotaEntity,UI,XUi MainMenu,,,"Zombie health bars are visible",,"Zombie-Gesundheitsbalken sind sichtbar","Las barras de vida de los zombis son visibles",,,,,,,,,,,,
+NotaMenu,UI,XUi MainMenu,,,"Improves the menu interface in the style of Your end",,"Verbessert die Menüoberfläche im Stil von: Your end","Mejora la interfaz de el menu al estilo de Your end",,,,,,,,,,,,
+
+NotaCompa,UI,XUi MainMenu,,,"Also compatible with Ramos XUI",,"Auch kompatibel mit Ramos XUI","Tambien compatible con Ramos XUI",,,,,,,,,,,,
+xuiMods,UI,XUi MainMenu,,,"Mods",,"Mods","Mods",,,,,,,,,,,,
+
+LDownload,UI,XUi MainMenu,,,"Download",,"Entladung","Descargar",,,,,,,,,,,,
+LDownloadKha,UI,XUi MainMenu,,,"Find 15 slots khaine",,"Durchsuchen Sie 15 Khaine-Slots","Buscar 15 slots khaine",,,,,,,,,,,,
+LSearch,UI,XUi MainMenu,,,"Find",,"Suche","Buscar",,,,,,,,,,,,
+
+YEModExtra,UI,XUi MainMenu,,,"Mod for those who play alone",,"Mod für diejenigen, die alleine spielen","Mod para los que juegan solos",,,,,,,,,,,,
+YEModPoiPreview,UI,XUi MainMenu,,,"It is a mod that shows the image of the house where you are going to go to work, but be very clear that this mod (It does not work for multiplayer), is only for those who like to play alone...",,"Es ist ein Mod, der das Bild des Hauses zeigt, in dem Sie zur Arbeit gehen werden, aber seien Sie sich darüber im Klaren, dass dieser Mod (er funktioniert nicht im Mehrspielermodus) nur für diejenigen ist, die gerne alleine spielen ...","Es un mod que muestra la imagen de la casa que se va a ir a trabajar, pero tengan muy en claro que este mod (No sirve para multijugador), solo es para los que les gusta jugar solos...",,,,,,,,,,,,
+
+VersionMain,UI,XUI,,,"[00DEFF]XUI 2.0.1 Stable",,"[00DEFF]XUI 2.0.1 Stable","[00DEFF]XUI 2.0.1 Stable",,,,,,,,,,,,,
+ModVersion,UI,XUI,,,",Xui 2.0.1",,",Xui 2.0.1",",Xui 2.0.1",,,,,,,,,,,,,
+TextInterface,UI,XUI,,,"INTERFACE BY DJ TRIPL3 XMR",,"INTERFACE BY DJ TRIPL3 XMR","INTERFAZ DE DJ TRIPL3 XMR",,,,,,,,,,,,,
+
+YECre0T,UI,Tooltip,,,"[00DEFF]RAMOS XUI[-] or [00DEFF]RAMOS XUI UNCHANGED[-], It is a mod that modifies the interface and adds some improvements to the game 7 Days To Die. The mod is developed by a person ([00DEFF]DJ TRIPL3 XMR[-]) and is based on the interface of ([00DEFF]YOUR END[-])",,"[00DEFF]RAMOS XUI[-] oder [00DEFF]RAMOS XUI UNCHANGED[-], Es handelt sich um einen Mod, der die Benutzeroberfläche modifiziert und einige Verbesserungen zum Spiel 7 Days To Die hinzufügt. Der Mod wurde von einer Person ([00DEFF]DJ TRIPL3 XMR[-]) entwickelt und basiert auf der Benutzeroberfläche von ([00DEFF]YOUR END[-])","[00DEFF]RAMOS XUI[-] o [00DEFF]RAMOS XUI UNCHANGED[-], Es un mod que modifica la interfaz y agrega algunas mejoras al juego 7 Days To Die, El mod esta desarrollado por una persona ([00DEFF]DJ TRIPL3 XMR[-]) y esta basada en la interfaz de ([00DEFF]YOUR END[-])",
+YECre0,UI,XUi MainMenu,,,"[FFE30A]  CREDITS, MODS",,"[FFE30A]  CREDITS, MODS","[FFE30A]  CREDITOS, MODS",
+YECre1,UI,XUi MainMenu,,,"DJ TRIPL3 XMR - [FFE30A]Author, Main Developer,[-] [00DEFF]Designer, Coding, Programing, Tester[-]",,"DJ TRIPL3 XMR - [FFE30A]Author, Main Developer,[-] [00DEFF]Designer, Coding, Programing, Tester[-]","DJ TRIPL3 XMR - [FFE30A]Autor, Principal Desarrollador,[-][00DEFF] Diseñador, Codificación, Programación, Probador[-]",
+YECre2,UI,XUi MainMenu,,,"The Fun Pimps [00DEFF](Code)[-]",,"The Fun Pimps [00DEFF](Code)[-]","The Fun Pimps [00DEFF](Código)[-]",
+YECre3,UI,XUi MainMenu,,,"TheMonarc361820 [00DEFF](Programing,developer,Coding)[-]",,"TheMonarc361820 [00DEFF](Programing,developer,Coding)[-]","TheMonarc361820 [00DEFF](Programación,Desarrollador,Codificación)[-]",
+

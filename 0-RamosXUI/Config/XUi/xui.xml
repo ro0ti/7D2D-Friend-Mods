@@ -1,0 +1,52 @@
+<ramos>
+
+	<!--<set xpath="/xui/ruleset[@name='default']/@scale">1.04</set>-->
+	<!--<set xpath="/xui/ruleset[@name='default']/@scale">1.04</set>-->
+
+	<set xpath="//window_group[@name='workstation_forge']">
+			<window name="windowCraftingListForge"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsForge" />
+			<window name="windowFuel" />
+			<window name="windowForgeInput" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+	</set>
+
+	<set xpath="//window_group[@name='workstation_campfire']">
+			<window name="windowCraftingListCampfire"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsCampfire" />
+			<window name="windowFuel" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+	</set>
+
+	<set xpath="//window_group[@name='workstation_workbench']">
+			<window name="windowCraftingListWorkbench"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+			<!-- <window name="windowCombine" /> -->
+	</set>
+
+	<set xpath="//window_group[@name='workstation_chemistryStation']">
+			<window name="windowCraftingListChemistry"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowFuel" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+	</set>
+
+	<set xpath="//window_group[@name='compass']">
+		<window name="windowCompass" />
+		<!--<window name="windowEntering" anchor="CenterTop" />-->
+		<window name="windowTargetBar" anchor="CenterTop" />
+		<window name="onScreenIcons" />
+	</set>
+		
+</ramos>

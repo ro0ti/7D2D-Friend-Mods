@@ -1,0 +1,53 @@
+<ramos>
+
+	<set xpath="/items/item[@name='drugSteroids']/effect_group/display_value[@name='dCarryCapacity']/@value">60</set>
+
+	<set xpath="/items/item[@name='partsMaster']">
+		<property name="CreativeMode" value="None"/>
+		<property name="CustomIcon" value="missingIcon"/>
+		<property name="HoldType" value="45"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="Mmetal"/>
+		<!--<property name="RepairTools" value="resourceRepairKit"/>--> <!-- IS NOT REQUIRED REAPIR KIT -->
+		<property name="Stacknumber" value="50"/>
+		<property name="DegradationBreaksAfter" value="false"/>
+		<property name="EconomicValue" value="750"/>
+		<!-- <property name="PickupJournalEntry" value="gunAssemblyTip"/> -->
+		<property name="Group" value="YEWeaponPart,Resources"/>
+	</set>
+
+	<set xpath="/items/item[@name='smallEngine']">
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MsmallEngine"/>
+		<!-- <property name="RepairTools" value="resourceRepairKit"/> --><!-- IS NOT REQUIRED REAPIR KIT -->
+		<property name="Stacknumber" value="1"/>
+		<property name="Material" value="MmechanicalParts"/>
+		<property name="Weight" value="200"/>
+		<property name="EconomicValue" value="1000"/>
+		<property name="Group" value="Resources"/>
+		<property name="DegradationBreaksAfter" value="false"/>
+		<property class="Attributes">
+			<property name="DegradationMax" value="1000,6000"/> <!-- needed for electrical calculations -->
+			<property name="VehicleNoise" value="1,.1"/>
+			<property name="VehicleMaxSpeed" value="5,18"/>
+			<property name="VehicleAcceleration" value="7,14"/>
+			<property name="VehicleMetersPerLiter" value="8,12"/>
+			<property name="VehicleIdleSecondsPerLiter" value="6,12"/>
+			<property name="VehicleStartDelayInSeconds" value="1,.1"/>
+			<property name="VehicleStartChance" value=".5,.99"/>
+			<property name="VehicleTankSize" value="1000, 2000"/>
+			<property name="VehicleFuelItem" value="ammoGasCan"/>
+		</property>
+	</set>
+
+	<!-- KIT DE REPARACION AGREGADO AL VEHICULO .. FOR UI DESCRIPTION REPAIR KIT-->
+
+	<append xpath="/items/item[@name='vehicleMinibikePlaceable']">
+		 <property name="RepairTools" value="resourceRepairKit"/>
+	</append>
+
+</ramos>

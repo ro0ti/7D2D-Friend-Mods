@@ -1,0 +1,67 @@
+<configs>
+
+  <!--<set xpath="/styles/global/style_entry[@name='hoverColor']/@value">255,255,255</set>
+  <set xpath="/styles/global/style_entry[@name='selectedColor']/@value">0,255,0</set>-->
+  <append xpath="/styles/global">
+
+        <!-- ALL COLOR PRIVATE --><!-- FOR XUI COMMON ???? -->
+        <style_entry name="RXHoverColor"             value="0,186,255" />
+
+        <style_entry name="RXWindowBackground"      value="35,48,82"/>      <!--COLOR ALL BACKGROUND-->
+        <style_entry name="RXWindowHeader"          value="46,59,93"/>      <!--COLOR ALL HEADER-->
+        <style_entry name="RXWindowBackgroundLine"  value="101,208,208"/>   <!--COLOR ALL SEPARATOR-->
+        <style_entry name="RXIconsBack"             value="50,63,97"/>      <!--COLOR ALL STATS BACKGROUNDD-->
+        <style_entry name="RXCountBack"             value="91,104,138"/>    <!--COLOR ALL OTHER STATS BACKGROUND-->
+        <style_entry name="RXxpBackground"          value="35,48,82,210"/>  <!--COLOR ALL XP TOOLBELT BACKGROUND-->
+
+      <!-- END ALL COLOR PRIVATE -->
+
+    <!--NAMED RAMOS MOD-->
+
+        <style_entry name="RFondo1"             value="33,44,45" />
+        <style_entry name="Rcontorno1"             value="1,33,41" />
+        <style_entry name="Rintemfondo1"             value="48,52,53" />
+        <style_entry name="Rrowcolor1"             value="59,62,63" />
+        <style_entry name="Rinvi1"             value="0,0,0,0" />
+        <style_entry name="RhoverB"             value="0,186,255" />
+  </append>
+
+  
+<!--
+    <set xpath="/styles/style[@name='header.panel']">
+        <style_entry name="name" value="header"/>
+        <style_entry name="height" value="43"/>
+        <style_entry name="depth" value="-1"/>
+        <style_entry name="sprite" value="menu_empty3px"/>
+        <style_entry name="color" value="255,0,0"/>
+
+    </set>-->
+
+    <set xpath="/styles/style[@name='itemStack']">
+        <style_entry name="select_color" value="[beige]"/>
+        <style_entry name="press_color" value="[limeGreen]"/>
+        <style_entry name="final_pressed_color" value="[lightGrey]"/>
+        <style_entry name="background_color" value="[mediumGrey]"/>
+        <style_entry name="highlight_color" value="[RhoverB]"/>
+        <style_entry name="holding_color" value="[white]"/>
+        <style_entry name="width" value="75"/>
+        <style_entry name="height" value="75"/>
+        <style_entry name="hover_icon_grow" value="1.5"/>
+        <style_entry name="on_press" value="true"/>
+        <style_entry name="sound_volume" value="0.75"/>
+        <style_entry name="pickup_sound" value="[pickup_click]"/>
+        <style_entry name="place_sound" value="[place_click]"/>
+
+    </set>
+
+    <append xpath="/styles">
+        <style name="RamosHeader" type="sprite">
+        <style_entry name="sprite" value="menu_empty3px"/>
+        <style_entry name="depth" value="2"/>
+        <style_entry name="type" value="sliced"/>
+        <style_entry name="color" value="0,255,0"/>
+    </style>
+
+    </append>
+
+</configs>

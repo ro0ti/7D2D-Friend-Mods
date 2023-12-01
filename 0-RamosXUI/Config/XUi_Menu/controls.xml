@@ -1,0 +1,25 @@
+<controls>
+
+<append xpath="/controls">
+
+	<RX_mainmenubutton depth="3" pos="0,0" width="275" height="32"
+			enabled_font_color="[labelColor]" disabled_font_color="[disabledLabelColor]" visible="true" enabled="true" pivot="center" tooltip_key="" sound="[default_click]" caption="" caption_key="" bordersprite="RX_SimpleButtonBorder" bordercolor="[black]">
+		<rect name="${name}" depth="${depth}" pos="${pos}" width="${width}" height="${height}" enabled_font_color="${enabled_font_color}" disabled_font_color="${disabled_font_color}" controller="SimpleButton" visible="${visible}" button_enabled="${enabled}" font_size_default="${height-16}" font_size_hover="${height-12}">
+			<sprite depth="4" name="border" sprite="${bordersprite}" pos="0,0" color="${bordercolor}" type="sliced" fillcenter="false" foregroundlayer="true" pivot="${pivot}" />
+			<button name="clickable" sprite="RX_SimpleButton" pos="0,0" defaultcolor="[RXWindowBackground]" hovercolor="[RXHoverColor]" type="sliced" hoverscale="1.0" pivot="${pivot}" tooltip_key="${tooltip_key}" sound_play_on_hover="[default_hover]" sound="${sound}"/>
+			<label depth="2" name="btnLabel" width="265" height="28" pos="0,-2" justify="center" text="${caption}" hoverscale="1" text_key="${caption_key}" effect="outline" pivot="${pivot}" font_size="28" upper_case="true" />
+		</rect>
+	</RX_mainmenubutton>
+
+	<RX_support depth="3" pos="0,0" width="234" height="52"
+			enabled_font_color="[labelColor]" disabled_font_color="[disabledLabelColor]" visible="true" enabled="true" pivot="left" tooltip_key="" sound="[default_click]" caption="" caption_key="" >
+		<rect name="${name}" depth="1" pos="0,0" width="${width}" height="${height}" enabled_font_color="${enabled_font_color}" disabled_font_color="${disabled_font_color}" controller="SimpleButton" visible="${visible}" button_enabled="${enabled}" font_size_default="28" font_size_hover="28">
+
+			<button name="clickable" sprite="${sprite}" width="${width}" height="${height}" pos="0,0" hoversprite="${hoversprite}" hovercolor="[white]" type="sliced" hoverscale="1" tooltip_key="${tooltip_key}" sound_play_on_hover="[default_hover]" sound="${sound}"/>
+			<label depth="2" name="btnLabel" pos="65,-16" width="180" height="28" hoverscale="1" text="${caption}" text_key="${caption_key}" effect="outline" font_size="28" upper_case="false" crispness="Never"/>
+		</rect>
+	</RX_support>
+		
+</append>
+
+</controls>
