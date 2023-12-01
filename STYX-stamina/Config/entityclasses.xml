@@ -1,0 +1,5 @@
+<configs>
+
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaMax']/@value">500</set>
+
+</configs>
